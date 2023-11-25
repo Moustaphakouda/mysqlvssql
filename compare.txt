@@ -1,0 +1,66 @@
+
+comparons mongodb vs mysql
+
+
+mongodb caracteristique
+
+1) Modèle de données :
+
+MongoDB est une base de données orientée document qui stocke toutes ses données sous forme de documents 
+binaires JSON (BSON). BSON vous permet de sérialiser de nombreuses formes de données. L'utilisation de
+ documents BSON vous permet de stocker des données non structurées, semi-structurées et structurées.
+Au lieu d'un schéma de base de données, MongoDB utilise une approche flexible et stocke les documents 
+dans des collections.
+
+2) Évolutivité
+
+MongoDB utilise la réplication et le partitionnement pour une mise à l'échelle horizontale.
+
+3)Langage de requête:
+
+MongoDB utilise le langage de requête MongoDB. 
+
+4)Performances:
+
+Les documents MongoDB suivent un modèle de données hiérarchique et conservent la plupart des données 
+dans un seul document, réduisant ainsi le besoin de jonctions entre plusieurs documents. Les jonctions 
+sont prises en charge via l'opération $lookup, mais elles ne sont pas optimisées en termes de performances. Cependant, MongoDB propose une API insertMany() pour insérer rapidement des données, en donnant la priorité aux performances d'écriture. 
+
+5)Flexibilité:
+
+MongoDB ne possède pas de schéma, ce qui lui confère plus de flexibilité et lui permet 
+de fonctionner avec des données non structurées, semi-structurées et structurées.
+
+6)Sécurité:
+
+MongoDB utilise les certificats Kerberos, X.509 et LDAP pour authentifier les utilisateurs. 
+
+
+mysql
+
+1) Modèle de données :
+
+MySQL est un système de base de données relationnelle qui stocke les données dans des colonnes,
+ des lignes et des tableaux. Vous stockez les données dans des lignes, chaque colonne représentant 
+ un type de données différent. Vous définissez ensuite les relations entre les données à l'aide de 
+ clés étrangères et de clés primaires. Chaque tableau possède une clé primaire que vous utilisez pour 
+ l'identifier, la clé étrangère créant une relation.
+
+ 2) Évolutivité:
+ MySQL utilise la mise à l'échelle verticale 
+ et les réplicas en lecture pour améliorer les performances, quelle que soit l'échelle.
+
+3)	Langage de requête:
+
+MySQL utilise SQL.
+
+4) Performances :
+
+MySQL est conçu pour créer des jonctions performantes entre plusieurs tableaux correctement indexés.
+ Toutefois, les données doivent être insérées ligne par ligne, ce qui ralentit les performances d'écriture.
+
+5) Flexibilité :
+MySQL possède un schéma rigide qui fonctionne bien avec les données structurées.
+
+6) Sécurité :
+MySQL utilise des méthodes d'authentification intégrées.
